@@ -22,6 +22,11 @@ public class TaskController {
         this.taskService = taskService;
     }
 
+    @GetMapping("/health")
+    public String health() {
+        return "TaskManager v2 deployed";
+    }
+
     @GetMapping("/tasks")
     public List<Task> getTasks() {
        
