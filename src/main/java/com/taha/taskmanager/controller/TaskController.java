@@ -24,7 +24,7 @@ public class TaskController {
 
     @GetMapping("/health")
     public String health() {
-        return "TaskManager v2 deployed";
+        return "TaskManager v2.1 deployed";
     }
 
     @GetMapping("/tasks")
